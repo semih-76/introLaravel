@@ -1,9 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Https\Controllers\HomeController;
+use App\Http\Controllers\ResourceController;
 
-/* Route::get('/', function () {
-    return view('welcome');
-}); */
-Route::get('/', [HomeController::class, 'index']);
+Route::get('/resources', [ResourceController::class, 'index']);
+Route::get('/resource/{resource}', [ResourceController::class, 'show']);
