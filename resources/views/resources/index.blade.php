@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Liste des ressources');
+@section('title', 'Liste des ressources')
 
 @section('content')
     <h1>Ressources</h1>
