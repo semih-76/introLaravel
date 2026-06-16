@@ -5,7 +5,11 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index()    {
+    public function index()  {
+        $prenom = "Semih";
 
+        return view('home', [
+            'prenom' => $prenom
+        ]);
     }
 }
